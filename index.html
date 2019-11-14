@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roberto Muquê</title>
+  <link rel='shortcut icon' type='image/x-icon' href=img/favicon.ico />
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      let h = document.getElementsByTagName('head').item(0);
+      let s = document.createElement("style");
+      s.type = "text/css";
+      let animation_style_open = ".item:hover circle, .item:hover image {    -webkit-transform: scale(1);  transform: scale(1);  } ";
+      if(navigator.userAgent.indexOf("Firefox") > 0){
+        animation_style_open += "image {  transform: scale(1);}";
+      }
+      s.appendChild(document.createTextNode(animation_style_open));
+      h.appendChild(s);
+    }
+  </script>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class='container'>
+    <main>
+      <div class='items'>
+        <div class='item'>
+          <div id="particles-js" style="width: 100%; height: 100%;z-index: -1;">
+          </div>
+          <div style="position: absolute;bottom:5px;left:5px;background-color: black;z-index: 5;">
+            <h2>Roberto Muquê</h2>
+            <p style="font-size: 12px;">© 2019 | mail@robertomuq.eu</p>
+          </div>
+          <svg preserveAspectRatio='xMidYMid slice' viewBox='0 0 300 200'>
+            <defs>
+              <clipPath id='clip-0'>
+                <circle cx='0' cy='0' fill='#000' r='60px'></circle>
+              </clipPath>
+            </defs>
+            <g clip-path='url(#clip-1)' preserveAspectRatio="xMinYMin meet" x="0" y="0" viewBox="0 0 100 100" width="20"
+              height="10">
+              <image height='100%' width='100%' xlink:href='http://robertomuq.eu/img/portrait.png'></image>
+            </g>
+            <g clip-path='url(#clip-0)' preserveAspectRatio="xMinYMin meet">
+              <rect width="100%" height="100%" fill="white" />
+              <image height='100%' width='100%' xlink:href='http://robertomuq.eu/img/portrait.png'></image>
+            </g>
+          </svg>
+        </div>
+    </main>
+  </div>
+  <!-- partial -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+  <script src="js/particles.min.js"></script> <!-- stats.js lib -->
+  <script src="js/particle-settings.js"></script>
+
+</body>
+
+</html>
