@@ -16,7 +16,8 @@ body {
 }
 
 a {
-  color: #1abc89;
+  /* color: #1abc89; */
+  color: unset
 }
 
 a:hover {
@@ -172,7 +173,8 @@ canvas {
   font-size: 1.1em;
 }
 
-#stats, .count-particles {
+#stats,
+.count-particles {
   -webkit-user-select: none;
   margin-top: 5px;
   margin-left: 5px;
@@ -189,4 +191,17 @@ canvas {
 
 #particles-js div {
   background: transparent !important;
+}
+
+.email {
+  text-decoration: none;
+}
+
+.contact-container {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  background-color: black;
+  z-index: 5;
+  padding: 5px;
 }
